@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Glitch+Pop&family=Rubik+Mono+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/96c75676d8.js" crossorigin="anonymous"></script>
+
+    <title>The Rose</title>
+    <style>
+        /* Existing styles */
+        .background-image {
+            background-image: url('./img/day6.jpeg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            margin: 0;
+            padding: 0;
+            min-height: 100vh; 
+            display: flex;
+            flex-direction: column;
+        }
+        .content {
+            flex: 1; 
+        }
+        /* Add your internal styles for the events section here */
+        .events-section {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .events-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        .event {
+            border: 1px solid #ccc;
+            padding: 10px;
+            border-radius: 8px;
+            width: 30%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            background-color: rgba(255, 255, 255, 0.9);
+        }
+        .event h3, .event p {
+            margin: 10px 0;
+        }
+        p {
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+        }
+
+        .find-events-section {
+            text-align: center;
+            margin: 40px 0;
+        }
+        .form-table{
+            padding: 5px;
+            margin-top: 20px;
+            border-radius: 5px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            background-color: rgba(255, 255, 255, 0.9);
+        }
+        .eve-near{
+            border: 2px solid #5e5b5b6f; 
+            width: auto;
+            padding: 5px; 
+            margin: 10px 0; 
+            border-radius: 8px; 
+            background-color: rgba(196, 193, 193, 0.559);
+            color: #676262d8;
+            text-align: center;
+        }
+        #event-locations {
+            padding: 10px;
+            margin-top: 20px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            background-color: #f8f8f8;
+        } 
+
+        button {
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: #000000d8;
+            color: white;
+            cursor: pointer;
+            
+        }
+        .button-container {
+             
+            text-align: center;
+            margin-top: 10px; 
+            font-size: 18px; 
+        }
+        button:hover {
+            background-color: #47494ba0;
+        }
+        .footer {
+            text-align: center;
+            margin-top: auto; 
+            padding: 10px;
+            font-family: 'Rubik Mono One', sans-serif;
+            color: rgba(0, 0, 0, 0.594); 
+        }
+    </style>
+</head>
+<body class="background-image">
+    <div class="navbar">
+        <a href="index.html">Home</a>  
+        <a href="band.html">Crew</a>
+        <a href="event.html">Events</a>
+        <a href="contact.html">Contact</a>
+    </div>
+    <div class="content">
+        <h1>Upcoming events</h1>
+        <div class="events-section">
+            <div class="events-container">
+                <div class="event">
+                    <h3>The soul</h3>
+                    <p><i class="fa-solid fa-location-dot"></i> Rose Bowl Stadium, California, USA</p>
+                    <p><i class="fa-solid fa-calendar-days" style="color: #000000;"></i> 02-28-2024, 6-11pm</p>
+                    <button type="submit">Buy Tickets</button>
+                </div>
+                <div class="event">
+                    <h3>Breakdown</h3>
+                    <p><i class="fa-solid fa-location-dot"></i> Barclays Center , New York City, USA</p>
+                    <p><i class="fa-solid fa-calendar-days" style="color: #000000;"></i> 03-05-2024, 3-7pm</p>
+                    <button type="submit">Buy Tickets</button>
+                </div>
+                <div class="event">
+                    <h3>THE REPLY</h3>
+                    <p><i class="fa-solid fa-location-dot"></i> MGM Stadium, Boston, Massachusetts, USA</p>
+                    <p><i class="fa-solid fa-calendar-days" style="color: #000000;"></i> 03-15-2024, 7-12pm</p>
+                    <button type="submit">Buy Tickets</button>
+                </div>
+            </div>
+        </div>
+        <div class="find-events">
+            <div class="eve-near">
+                <h2>Events Near You</h2>
+            </div>
+            <div class="form-container">
+                <form>
+                    <table class="form-table">
+                        <tr>
+                            <td><label for="first-name">First Name:</label></td>
+                            <td><input type="text" id="first-name" name="first-name"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="last-name">Last Name:</label></td>
+                            <td><input type="text" id="last-name" name="last-name"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="city">City:</label></td>
+                            <td><input type="text" id="city" name="city"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="state">State:</label></td>
+                            <td>
+                                <select id="state" name="state">
+                                    <option value="AL">Alabama</option>
+                                    <option value="CA">California</option>
+                                    <option value="FL">Florida</option>
+                                    <option value="GA">Georgia</option>
+                                    <option value="HI">Hawaii</option>
+                                    <option value="MA">Massachusetts</option>
+                                    <option value="NH">New Hampshire</option>
+                                    <option value="NJ">New Jersey</option>
+                                    <option value="NY">New York</option>
+                                    <option value="TX">Texas</option>
+                                    <option value="VA">Virginia</option>
+                                    <option value="WA">Washington</option>                    
+                                </select>
+                            </select><br>
+                            <div class="button-container">
+                                <button type="submit">Notify Me</button>
+                            </div>
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+        </div>
+        
+    </div>
+    <div class="footer">Follow us on:
+        <a href="https://facebook.com" target="_blank"><i class="fa-brands fa-facebook" style="color: #045390;"></i></a>
+        <a href="https://twitter.com" target="_blank"><i class="fa-brands fa-square-x-twitter" style="color: #000714;"></i></a>
+        <a href="https://instagram.com"><i class="fa-brands fa-instagram" style="color: #e250de;"></i></a>
+    </div>
+</body>
+</html>
+
+

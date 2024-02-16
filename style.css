@@ -1,0 +1,252 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+}
+
+h2, h3 {
+    font-family: 'Rubik Mono One', sans-serif;
+    align-items: center;
+    margin: 20px 0; 
+    color: #000000;
+}
+
+footer {
+    display: block;
+}
+
+.footer {
+    text-align: center;
+    margin-top: auto; 
+    padding: 10px;
+    font-family: 'Rubik Mono One', sans-serif;
+    color: rgba(0, 0, 0, 0.594); 
+}
+#footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 2.5rem;
+        font-family: 'Rubik Mono One', sans-serif;
+
+  }
+
+.navbar {
+    overflow: hidden;
+    display: block;
+    margin-top: 10px;
+
+}
+.navbar a {
+    float: left;
+    display: block;
+    color: rgba(0, 0, 0);
+    text-align: center;
+    text-decoration: none;
+    padding: 10px;
+    font-family: "Rubik Mono One", monospace;
+    font-weight: 300;
+    font-size: 16px;
+}
+
+.navbar a:hover {
+    color: rgba(105, 104, 104, 0.75);
+}
+.background-image {
+    background-image: url('./img/day6.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh; 
+    display: flex;
+    flex-direction: column;
+}
+.content {
+    flex: auto;
+    
+}
+.about {
+    text-align: center;
+    position: relative;
+    margin: 0 auto; 
+    max-width: 80%; 
+    padding: 20px;
+    margin-top: 20px;
+
+    overflow-y: auto;
+
+}
+.content{
+    font-family: "Rubik Mono One", monospace;
+    font-weight: 600;
+    font-size: 24px;
+    padding: 20px;
+    color: rgba(67, 63, 63, 0.88);
+    font-style: normal;
+    text-align: center;
+  }
+  
+.contact-container {
+    font-family: "Rubik Mono One", monospace;
+    font-size: 16px;
+    border: 1px solid #d1caca;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    max-width: 800px;
+    margin: auto;
+    background-color: rgba(255, 254, 254, 0.658); 
+    display: flex;
+    color: rgb(0, 0, 0);
+    flex-direction: column;
+    align-items: center;
+}
+
+.forms-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px; 
+}
+
+.contact-details, .form-box {
+    flex: 1; 
+    padding: 10px; 
+    border: 1px solid #ccc; 
+    border-radius: 8px;
+    padding: 20px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1)
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; 
+}
+
+input[type="text"], input[type="tel"], input[type="email"], textarea {
+    padding: 10px;
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
+    background-color: #f8f8f8;
+    outline: none; 
+}
+
+input[type="text"]:focus, input[type="tel"]:focus, textarea:focus {
+    border-color: #000000;
+}
+
+textarea {
+    resize: vertical; 
+}
+
+button[type="submit"] {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    color: white; 
+    background-color: #000000;
+    transition: background-color 0.3s; 
+}
+
+button[type="submit"]:hover {
+    background-color: #545050e5; 
+}
+
+.team-section {
+    margin-top: 50px;
+    
+}
+
+.team-container {
+    display: flex;
+    flex-direction: row; 
+    justify-content: center; 
+    flex-wrap: wrap;
+    gap: 20px; 
+    padding: 20px;
+    max-width: 100%;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    background-color: rgba(255, 254, 254, 0.658);
+}
+
+.team-member {
+    width: 200px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.team-member img {
+    width: 100%;
+    height: 50%; 
+    border-radius: 10px;
+    box-shadow: #555353;
+}
+
+@media (max-width: 600px) {
+    .forms-container {
+        flex-direction: column; 
+        gap: 10px; 
+    }
+
+    .contact-details, .form-box {
+        width: 90%; 
+        padding: 10px; 
+        flex: none; 
+    }
+
+
+}
+
+@media only screen and (max-width: 768px) {
+    .events-container, .form-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .event, .eve-near {
+        width: 100%;
+        margin: 10px;
+        padding: 10px;
+        word-wrap: break-word;
+
+    }
+    .event h3 {
+        font-size: 5vw; 
+    }
+
+    .form-table, .form-table td, .button-container {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    * {
+        box-sizing: border-box;
+    }
+    .button-container button {
+        width: auto;
+        margin: 0 auto; 
+    }
+
+    
+}
+
+
+    
+
+
+
+ 
