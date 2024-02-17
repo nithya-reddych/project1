@@ -14,7 +14,6 @@
 
     <title>The Rose</title>
     <style>
-        /* Existing styles */
         .background-image {
             background-image: url('./img/day6.jpeg');
             background-size: cover;
@@ -29,7 +28,6 @@
         .content {
             flex: 1; 
         }
-        /* Add your internal styles for the events section here */
         .events-section {
             text-align: center;
             margin: 20px 0;
@@ -67,7 +65,25 @@
             border: 1px solid #ccc;
             background-color: rgba(255, 255, 255, 0.9);
         }
-        .eve-near{
+        .songs-section table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .songs-section th, .songs-section td {
+            border: 1px solid #2b2929b7;
+            padding: 8px;
+            background-color: #f8f8f8f1;
+            text-align: left;
+            border-radius: 5px;
+            font-size: 16px;
+
+        }
+
+        .songs-section th {
+            background-color: #b3b1b1;
+        }
+        .decor{
             border: 2px solid #5e5b5b6f; 
             width: auto;
             padding: 5px; 
@@ -82,7 +98,7 @@
             margin-top: 20px;
             border-radius: 5px;
             border: 1px solid #ccc;
-            background-color: #f8f8f8;
+            background-color: #f8f8f8ae;
         } 
 
         button {
@@ -143,8 +159,41 @@
                 </div>
             </div>
         </div>
+        <div class="songs-section">
+            <div class="decor">
+                <h2>Performing Tonight</h2>
+            </div>
+            <table>
+                <tr>
+                    <th>song name</th>
+                    <th>Album</th>
+                    <th>Performed By</th>
+                </tr>
+                <tr>
+                    <td>Red</td>
+                    <td>Red</td>
+                    <td>Jae</td>
+                </tr>
+                <tr>
+                    <td>Sorry</td>
+                    <td>Heal</td>
+                    <td>Everyone</td>
+                </tr>
+                <tr>
+                    <td>She's in the rain</td>
+                    <td>Alive</td>
+                    <td>Everyone</td>
+                </tr>
+                <tr>
+                    <td>Back to me</td>
+                    <td>Dual</td>
+                    <td>Everyone</td>
+                </tr>
+            </table>
+        </div>
+        
         <div class="find-events">
-            <div class="eve-near">
+            <div class="decor">
                 <h2>Events Near You</h2>
             </div>
             <div class="form-container">
